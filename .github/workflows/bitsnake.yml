@@ -1,90 +1,44 @@
-name: release
+name: generate animation
 
 on:
+  # run automatically every 00:00 hours
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # allows to manually run the job at any time
   workflow_dispatch:
-    inputs:
-      version:
-        description: |
-          New version for the release
-          If the version is in format <major>.<minor>.<patch> a new release is emitted.
-          Otherwise for other format ( for example <major>.<minor>.<patch>-beta.1 ), a prerelease is emitted.
-        default: "0.0.1"
-        required: true
-        type: string
-      description:
-        description: "Version description"
-        type: string
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+    
+  
 
 jobs:
-  release:
+  generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 10
+    
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: docker/setup-qemu-action@v2
-
-      - uses: docker/setup-buildx-action@v2
-
-      - uses: docker/login-action@v2
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: build and publish the docker image
-        uses: docker/build-push-action@v4
-        id: docker-build
-        with:
-          push: true
-          tags: |
-            platane/snk:${{ github.sha }}
-            platane/snk:${{ github.event.inputs.version }}
-
-      - name: update action.yml to point to the newly created docker image
-        run: |
-          sed -i "s/image: .*/image: docker:\/\/platane\/snk@${{ steps.docker-build.outputs.digest }}/" action.yml
-
-      - uses: actions/setup-node@v3
-        with:
-          cache: yarn
-          node-version: 16
-
-      - name: build svg-only action
-        run: |
-          yarn install --frozen-lockfile
-          npm run build:action
-          rm -r svg-only/dist
-          mv packages/action/dist svg-only/dist
-
-      - name: bump package version
-        run: yarn version --no-git-tag-version --new-version ${{ github.event.inputs.version }}
-
-      - name: push new build, tag version and push
-        id: push-tags
-        run: |
-          VERSION=${{ github.event.inputs.version }}
-
-          git config --global user.email "bot@platane.me"
-          git config --global user.name "release bot"
-          git add package.json svg-only/dist action.yml
-          git commit -m "📦 $VERSION"
-          git tag v$VERSION
-          git push origin main --tags
-
-          if [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            git tag v$( echo $VERSION | cut -d. -f 1-1 )
-            git tag v$( echo $VERSION | cut -d. -f 1-2 )
-            git push origin --tags --force
-            echo "prerelease=false" >> $GITHUB_OUTPUT
-          else 
-            echo "prerelease=true" >> $GITHUB_OUTPUT
-          fi
-
-      - uses: ncipollo/release-action@v1.12.0
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          tag: v${{ github.event.inputs.version }}
-          body: ${{ github.event.inputs.description }}
-          prerelease: ${{ steps.push-tags.outputs.prerelease }}
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
