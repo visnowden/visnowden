@@ -12,5 +12,3 @@
 - 🌱 Atualmente estou Aprendendo HTML, CSS e JS
 
 ![Snake animation](https://github.com/Hacker-Bug-Hunter/Hacker-Bug-Hunter/blob/output/github-contribution-grid-snake.svg)
-
-![src='{"event_type":"user_profile.click","payload":{"profile_user_id":72585285,"target":"CONTRIBUTION_CALENDAR_SQUARE","user_id":72585285,"originating_url":"https://github.com/Hacker-Bug-Hunter"}}']
