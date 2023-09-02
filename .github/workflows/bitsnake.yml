@@ -1,3 +1,4 @@
+
 name: Generate Animation
 
 on:
@@ -17,7 +18,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Generate GitHub Contribution Grid Snake SVG
-        uses: Hacker-Bug-Hunter/Hacker-Bug-Hunter/resources/main/main@latest
+        uses: Platane/snk@v3
         with:
           github_user_name: Hacker-Bug-Hunter
           outputs: |
@@ -26,7 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push GitHub Contribution Grid Snake SVG to the Output Branch
-        uses: Hacker-Bug-Hunter/Hacker-Bug-Hunter/resources/dev/main@latest
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
