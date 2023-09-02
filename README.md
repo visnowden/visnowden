@@ -1,6 +1,6 @@
 # Codes
 
-**Hacker-Bug-Hunter** is a ✨ _special_ ✨ `README.md` GitHub's repository
+**Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 
 <div width='100%' display='flex'>
   <img src='https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&theme=gotham'/>
