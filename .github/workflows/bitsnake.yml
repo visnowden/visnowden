@@ -4,36 +4,27 @@ on:
   # Executa automaticamente todos os dias à meia-noite
   schedule:
     - cron: "0 0 * * *"
-
   # Permite executar manualmente o trabalho a qualquer momento
   workflow_dispatch:
-
   # Executa a cada push na branch master
   push:
     branches:
       - master
-
+      - main
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
-      # Gera um jogo da cobrinha a partir do gráfico de contribuição do usuário do GitHub (<github_user_name>),
-      # produzindo uma animação SVG em <svg_out_path>
       - name: Generate GitHub Contribution Grid Snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: Hacker-Bug-Hunter
-          outputs: |
+          outputs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Envia o conteúdo de <build_dir> para um branch
-      # O conteúdo estará disponível em https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file>,
-      # ou como página do GitHub
       - name: Push GitHub Contribution Grid Snake SVG to the Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
