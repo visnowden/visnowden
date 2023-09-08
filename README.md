@@ -3,7 +3,10 @@
 **Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 
 <div width='100%' display='flex'>
-<a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Hacker-Bug-Hunter's github stats" /></a> | <a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hacker-Bug-Hunter&layout=compact&theme=buefy&hide_border=true" /></a>
+<a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&include_all_commits=true&theme=gotham&hide_border=true" alt="Hacker-Bug-Hunter's github stats" /></a>
+<a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hacker-Bug-Hunter&layout=compact&theme=gotham&hide_border=true" /></a>
   <!--midnight-purple-->
   <!--gotham-->
 </div>
