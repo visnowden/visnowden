@@ -4,9 +4,9 @@
 
 <div width='100%' display='flex'>
 <a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&include_all_commits=true&theme=gotham&hide_border=true" alt="Hacker-Bug-Hunter's github stats" /></a>
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&include_all_commits=true&theme=gotham" alt="Hacker-Bug-Hunter's github stats" /></a>
 <a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hacker-Bug-Hunter&layout=compact&theme=gotham&hide_border=true" /></a>
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hacker-Bug-Hunter&layout=compact&theme=gotham"/></a>
   <!--midnight-purple-->
   <!--gotham-->
 </div>
