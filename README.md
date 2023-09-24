@@ -12,7 +12,7 @@
 </div>
 
 - 🔭 Atualmente trabalho como Freelancer em Python
-- 🌱 Atualmente estou Aprendendo HTML, CSS e JS
+- 🌱 Atualmente estou aprimorando minhas habilidades em Python e aprendendo Django
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
