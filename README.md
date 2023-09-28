@@ -5,11 +5,11 @@
  <picture>
  <source
  srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&theme=dark"
- media="(prefers-color-scheme: dark)"
+ media="(prefers-color-scheme: drk)"
  />
  <source
  srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true"
- media="(prefers-color-scheme: light), (prefers-color-scheme: light)"
+ media="(prefers-color-scheme: light), (prefers-color-scheme: liht)"
  />
  <img src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&theme=cobalt" />
 </picture>
