@@ -10,7 +10,6 @@
   <!--midnight-purple-->
   <!--gotham-->
 </div>
-
 - 🔭 Atualmente trabalho como Freelancer em Python
 - 🌱 Atualmente estou aprimorando minhas habilidades em Python e aprendendo Django
 <picture>
