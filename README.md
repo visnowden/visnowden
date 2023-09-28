@@ -10,7 +10,7 @@
   <!--midnight-purple-->
   <!--gotham-->
 </div>
-[![Hacker-Bug-Hunter's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter)](https://github.com/Hacker-Bug-Hunter/github-readme-stats)
+
 - 🔭 Atualmente trabalho como Freelancer em Python
 - 🌱 Atualmente estou aprimorando minhas habilidades em Python e aprendendo Django
 <picture>
