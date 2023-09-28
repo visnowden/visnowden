@@ -3,13 +3,14 @@
 **Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 
 <div width='100%' display='flex'>
-[![Hacker-Bug-Hunter's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter)](https://github.com/Hacker-Bug-Hunter/github-readme-stats)
+<a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&include_all_commits=true&theme=gotham" alt="Hacker-Bug-Hunter's github stats" /></a>
 <a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hacker-Bug-Hunter&include_all_commits=true&layout=compact&theme=gotham"/></a>
   <!--midnight-purple-->
   <!--gotham-->
 </div>
-
+[![Hacker-Bug-Hunter's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter)](https://github.com/Hacker-Bug-Hunter/github-readme-stats)
 - 🔭 Atualmente trabalho como Freelancer em Python
 - 🌱 Atualmente estou aprimorando minhas habilidades em Python e aprendendo Django
 <picture>
