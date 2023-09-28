@@ -1,6 +1,19 @@
 # Codes
 
 **Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
+<p>
+ <picture>
+ <source
+ srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&theme=dark"
+ media="(prefers-color-scheme: dark)"
+ />
+ <source
+ srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter"
+ media="(prefers-color-scheme: light), (prefers-color-scheme: light)"
+ />
+ <img src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true" />
+</picture>
+</p>
 
 <div width='100%' display='flex'>
 <a href="https://github.com/Hacker-Bug-Hunter/github-readme-stats">
