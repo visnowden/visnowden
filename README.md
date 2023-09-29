@@ -1,13 +1,13 @@
 #**Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 <br>
 <script>
-  const preferredColorMode = window.localStorage.getItem('theme');
-
+  const preferredColorMode = window.localStorage.getItem('theme')
+  console.log(preferredColorMode)
   // Verifica se o tema preferido é "dark"
   if (preferredColorMode === 'dark') {
-    document.getElementById('image-element').src = '[link_da_imagem_para_tema_escuro.png](https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&card_heigth=700&show=prs_mergedreviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs)';
+    document.getElementById('image-element').src = 'https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&card_heigth=700&show=prs_mergedreviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs'
   } else {
-    document.getElementById('image-element').src = '[link_da_imagem_para_tema_claro.png](https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&heigth=500&show=prs_mergedreviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs)';
+    document.getElementById('image-element').src = 'https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&heigth=500&show=prs_mergedreviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs'
   }
 </script>
 
