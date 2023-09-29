@@ -1,7 +1,7 @@
 #**Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 <br>
 
-<a href="/">
+<a href="#">
   <img src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs#gh-light-mode-only" alt="Imagem Redirecionável" />
 </a>
 
