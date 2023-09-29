@@ -1,10 +1,10 @@
 #**Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 <picture>
-  <source srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&theme=dark&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&height=500&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs"
+  <source srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&height=500&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs"
           media="(prefers-color-scheme: dark)" />
-  <source srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&theme=light&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&height=500&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs"
+  <source srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&height=500&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs"
           media="(prefers-color-scheme: light)" />
-  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&theme=dark&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs" />
+  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&theme=holi&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs" />
 </picture>
 
 
