@@ -5,19 +5,19 @@
 [![Stats](https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs")](#gh-light-mode-only)
 <br>
 
-<img heigth="100%" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&show_icons=true&include_all_commits=true&theme=gotham" alt="Hacker-Bug-Hunter's github stats" />
 
-  <picture>
+<picture>
     <source
     media="(prefers-color-scheme: dark)"
-    srcset="(https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs)(#gh-dark-mode-only)">
+    srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs">
   <source
     media="(prefers-color-scheme: light)"
-    srcset="(https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs")(#gh-light-mode-only)">
+    srcset="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&show=prs_merged,reviews,prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&hide=contribs">
   <img
     alt="github"
     width="100%" src="https://github-readme-stats.vercel.app/api?username=Hacker-Bug-Hunter"/>
 </picture>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
   <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
