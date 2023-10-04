@@ -1,4 +1,4 @@
-# Hacker-Bug-Hunter is a ✨_special_✨ repository based on GitHub `README.md`
+## Hacker-Bug-Hunter is a ✨_special_✨ repository based on GitHub `README.md`
 - 🔭 Atualmente trabalho como Freelancer em Python
 - 🌱 Aprimorando minhas habilidades em Python e aprendendo Django
 <br>
