@@ -4,7 +4,7 @@ name: Generate Animation
 on:
   # Executa automaticamente todos os dias à meia-noite
   schedule:
-    - cron: "59 23 * * *"
+    - cron: "50 23 * * *"
   # Permite executar manualmente o trabalho a qualquer momento
   workflow_dispatch:
   # Executa a cada push na branch master
