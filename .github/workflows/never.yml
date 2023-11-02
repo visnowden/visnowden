@@ -31,7 +31,7 @@ jobs:
       run: ls
 
     - name: Wait for 30 seconds
-      run: sleep 1
+      run: sleep 30
 
     - name: Delete File
       run: rm .py
