@@ -8,10 +8,6 @@ on:
   # Permite executar manualmente o trabalho a qualquer momento
   workflow_dispatch:
   # Executa a cada push na branch master
-  push:
-    branches:
-      - master
-      - main
 jobs:
   generate:
     runs-on: ubuntu-latest
