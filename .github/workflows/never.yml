@@ -17,6 +17,9 @@ jobs:
 
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        submodules: recursive  # Adicione essa linha se precisar de submódulos
+
 
     - name: Go to the Hacker-Bug-Hunter/
       run: cd ../..
