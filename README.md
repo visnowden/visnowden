@@ -1,4 +1,4 @@
-# echo '# Another day developing...' >> calendar.py
+# echo '# Another day developing...' >> calendar.pyo
 - **Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 - 🌱 Honing my Python skills and learning Django
 - 🔭 I currently work as a Python Freelancer
