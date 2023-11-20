@@ -1,5 +1,5 @@
 # echo '# Another day developing...' >> calendar.pyc
-- **Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
+**Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub `README.md`
 - 🌱 Honing my Python skills and learning Django
 - 🔭 I currently work as a Python Freelancer
 <br>
