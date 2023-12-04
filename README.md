@@ -6,7 +6,7 @@
     - 🔭 I currently work as a Python Freelancer
   </div>
   <div>
-    
+    <img>
   </div>
 </div>
 <br>
