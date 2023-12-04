@@ -1,9 +1,11 @@
 # echo '# Another day developing... ' >> calendar.py
 <div>
   <div>
+    <p> <br>
     **Hacker-Bug-Hunter** is a ✨_special_✨ repository based on GitHub's `README.md`
-    - 🌱 Honing my Python skills and learning Django
-    - 🔭 I currently work as a Python Freelancer
+  </br> </p>
+    <p> - 🌱 Honing my Python skills and learning Django </p>
+    <p> - 🔭 I currently work as a Python Freelancer </p>
   </div>
   <div>
     <img>
