@@ -16,8 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.10  # Use 3.x para indicar a última versão disponível
-        architecture: x64
+        python-version: 3.8
 
     - name: Install dependencies
       run: |
