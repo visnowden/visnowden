@@ -2,12 +2,9 @@
 name: Generate Animation
 
 on:
-  # Executa automaticamente todos os dias à meia-noite
   schedule:
     - cron: "2 0 * * *"
-  # Permite executar manualmente o trabalho a qualquer momento
   workflow_dispatch:
-  # Executa a cada push na branch master
 jobs:
   generate:
     runs-on: ubuntu-latest
