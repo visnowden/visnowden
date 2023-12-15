@@ -1,4 +1,4 @@
-name: Compare SVGs and Update README
+name: compare and update
 
 on:
   schedule:
