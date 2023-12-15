@@ -1,4 +1,4 @@
-name: Compare SVGs and Update README
+name: Update README
 
 on:
   push:
