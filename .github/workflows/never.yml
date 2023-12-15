@@ -15,12 +15,6 @@ jobs:
       with:
         node-version: 16
 
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-      with:
-        submodules: recursive  # Adicione essa linha se precisar de submódulos
-
-
     - name: Go to the Hacker-Bug-Hunter/
       run: cd ../..
       
