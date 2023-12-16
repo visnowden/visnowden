@@ -25,4 +25,4 @@ jobs:
         pip install -r .github/workflows/streak/requirements.txt
 
     - name: Run Python script
-      run: python compare_and_update.py
+      run: python .github/workflows/streak/compare_update.py
