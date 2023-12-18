@@ -23,7 +23,7 @@ jobs:
       - name: Move SVG files to custom directory
         run: |
           mkdir snake/
-          mv dist/* snake/
+          cp dist/* snake/
 
       - name: Commit and push changes
         run: |
