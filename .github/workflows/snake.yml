@@ -25,7 +25,8 @@ jobs:
           mkdir snake
           cd snake
           git init
-          git switch -c output
+          git switch output
+          git config --global init.defaultBranch output
           cp ../dist/* .
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
           git config --global user.name "visnowden"
