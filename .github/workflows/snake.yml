@@ -19,12 +19,16 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: List files in dist before push
+        run: ls -R dist
       - name: Add and commit new files
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git add dist/*
           git commit -m "snake"
+      - name: List files in dist after push
+        run: ls -R dist
       - name: Push GitHub Contribution Grid Snake SVG to the Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
