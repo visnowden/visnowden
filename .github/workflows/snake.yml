@@ -22,8 +22,8 @@ jobs:
         run: ls -a; echo; ls -a dist; echo; pwd
       - name: Move SVG files to custom directory
         run: |
-          mkdir meu_diretorio
-          mv dist/* meu_diretorio/
+          mkdir snake/
+          mv dist/* snake/
 
       - name: Commit and push changes
         run: |
