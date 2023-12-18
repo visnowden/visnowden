@@ -31,6 +31,6 @@ jobs:
           git init
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
           git config --global user.name "visnowden"
-          git add snake/
+          git add .
           git commit -m "update snakes's SVG files to snake"
           git push origin output
