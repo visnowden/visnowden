@@ -31,5 +31,5 @@ jobs:
           git config --global user.name "visnowden"
           git add .
           git commit -m "Update snakes's SVG files to output"
-          git remote add origin https://github.com/visnowden/visnowden.git
+          git remote add origin "https://github.com/visnowden/visnowden.git"
           git push origin output
