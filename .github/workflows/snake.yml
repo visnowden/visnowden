@@ -28,11 +28,10 @@ jobs:
       - name: Commit and push changes
         run: |
           cd snake
-          git init
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
           git config --global user.name "visnowden"
+          git checkout output
           git add .
-          git commit -m "update snakes's SVG files to snake"
-          git checkout -b output origin/output
-          git remote add origin https://github.com/visnowden/visnowden.git
+          git commit -m "Update snakes's SVG files to output"
           git push origin output
+
