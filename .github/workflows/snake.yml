@@ -19,6 +19,8 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: List files in dist before push
+        run: ls -R dist
       - name: Push GitHub Contribution Grid Snake SVG to the Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
