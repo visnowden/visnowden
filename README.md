@@ -1,10 +1,3 @@
-![image](https://github-readme-stats.vercel.app/apiusername=visnowden&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&icon_color=0ef&ring_color=f0a&show=prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true)
-![image](https://github-readme-stats.vercel.app/apiusername=visnowden&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&icon_color=000&ring_color=0ac&show=prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true)
-![image](https://github-readme-stats.vercel.app/apiusername=visnowden&show=prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&theme=holi)
-![image](https://github-readme-stats.vercel.app/api/top-langs/username=visnowden&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&border_radius=20&hide_title=true&langs_count=20&layout=compact)
-![image](https://github-readme-stats.vercel.app/api/top-langs/username=visnowden&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&border_radius=20&hide_title=true&langs_count=20&layout=compact)
-![image](https://github-readme-stats.vercel.app/api/top-langs/username=visnowden&border_radius=20&hide_title=true&theme=holi&langs_count=20&layout=compact)
-
 <visnowden width="100%">
 <h1>echo '# Another day developing... ' >> calendar.py</h1>
 <table>
