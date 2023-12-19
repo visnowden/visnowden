@@ -41,6 +41,7 @@ jobs:
           mkdir snake
           cp ../dist/* snake
           git switch -c output
+          git fetch
           echo
           cat .git/config
           echo
