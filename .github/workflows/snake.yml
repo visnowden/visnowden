@@ -24,8 +24,22 @@ jobs:
         run: |
           git config --global user.name "visnowden"
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
+          git clone https://github.com/visnowden/visnowden
+          echo
+          pwd
+          echo
+          ls -la
+          echo
+          git branch -r
+          echo
+          cat .git/.gitconfig
+          echo
+          cat .git/gitconfig
+          echo
+          cat .git/config
+          echo
           git init
-          git checkout -b output origin/output
+          git switch -c output
           mkdir snake
           cp dist/* snake
           git add snake
