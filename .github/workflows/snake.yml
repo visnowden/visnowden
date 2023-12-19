@@ -32,6 +32,8 @@ jobs:
           echo
           cd visnowden
           echo
+          ls -la
+          echo
           git branch -r
           echo
           cat .git/.gitconfig
