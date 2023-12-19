@@ -40,8 +40,8 @@ jobs:
           echo
           cat .git/config
           echo
-          mkdir visnowden/snake
-          cp dist/* visnowden/snake
+          mkdir snake
+          cp ../dist/* snake
           git init
           git switch -c output
           git add snake
