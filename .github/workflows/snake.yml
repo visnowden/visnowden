@@ -50,6 +50,6 @@ jobs:
           echo
           git remote set-url origin https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden.git
           git commit -m "Update snakes's SVG files to output"
-          git push -u origin/output
+          git push -u origin output
         env:
           AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
