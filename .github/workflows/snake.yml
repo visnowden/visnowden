@@ -46,7 +46,7 @@ jobs:
           echo
           git branch -r
           echo
-          echo git add snake
+          git add snake
           echo
           git remote set-url origin https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden.git
           git commit -m "Update snakes's SVG files to output"
