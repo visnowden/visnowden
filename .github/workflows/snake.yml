@@ -25,6 +25,9 @@ jobs:
           git config --global user.name "visnowden"
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
           git clone https://github.com/visnowden/visnowden
+          mkdir visnowden/snake
+          cp dist/* visnowden/snake
+          cd vinowden
           echo
           pwd
           echo
@@ -40,8 +43,6 @@ jobs:
           echo
           git init
           git switch -c output
-          mkdir snake
-          cp dist/* snake
           git add snake
           git commit -m "Update snakes's SVG files to output"
           git push -u origin output
