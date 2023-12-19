@@ -34,6 +34,8 @@ jobs:
           echo
           ls -la
           echo
+          ls -la .git
+          echo
           git branch -r
           echo
           cat .git/.gitconfig
