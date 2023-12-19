@@ -25,9 +25,9 @@ jobs:
           git config --global user.name "visnowden"
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
           git init
+          git checkout -b output origin/output
           mkdir snake
           cp dist/* snake
-          git checkout -b output origin/output
           git add snake
           git commit -m "Update snakes's SVG files to output"
           git push -u origin output
