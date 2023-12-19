@@ -22,7 +22,6 @@ jobs:
         run: |
           git credential-cache exit
           rm -f ~/.git-credentials
-          git config user.token snake
           git config user.name "visnowden"
           git clone https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden
           echo
