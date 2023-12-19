@@ -21,9 +21,10 @@ jobs:
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
           pwd
-          git config user.name "visnowden"
-          pwd
           git clone https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden
+          git config user.name "visnowden"
+          git config user.email "72585285+visnowden@users.noreply.github.com"
+          pwd
           pwd
           echo
           ls -la
