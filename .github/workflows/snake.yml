@@ -5,9 +5,13 @@ on:
     - cron: "2 0 * * *"
   workflow_dispatch:
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+  generate:
+    runs-on: ubuntu-latest
     steps:
       - name: Generate GitHub Contribution Grid Snake SVG
         uses: Platane/snk@v3
