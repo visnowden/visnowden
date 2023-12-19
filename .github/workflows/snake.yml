@@ -22,9 +22,9 @@ jobs:
         run: |
           git credential-cache exit
           rm -f ~/.git-credentials
-          git config --global user.token snake
-          git config --global user.name "visnowden"
-          git clone https://github.com/visnowden/visnowden
+          git config user.token snake
+          git config user.name "visnowden"
+          git clone https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden
           echo
           pwd
           echo
@@ -51,5 +51,3 @@ jobs:
           echo
           git commit -m "Update snakes's SVG files to output"
           git push -u origin output
-        env:
-          GITHUB_TOKEN: ${{ secrets.snake }}
