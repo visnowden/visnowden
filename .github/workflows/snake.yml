@@ -20,7 +20,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: linux
         run: pwd; echo; ls -a; echo; ls -a dist;
-      - name: Move SVG files to custom directory nad Commit and push changes
+      - name: Move SVG files to custom directory and Commit and push changes
         run: |
           git config --global user.name "visnowden"
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
