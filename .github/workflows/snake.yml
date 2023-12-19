@@ -42,10 +42,8 @@ jobs:
           echo
           mkdir snake
           cp ../dist/* snake
-          git init
           git switch -c output
           git add snake
           git commit -m "Update snakes's SVG files to output"
+          git config --global credential.helper cache
           git push -u origin output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
