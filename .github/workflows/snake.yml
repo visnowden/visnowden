@@ -20,8 +20,6 @@ jobs:
         run: pwd; echo; ls -a; echo; ls -a dist;
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-          git credential-cache exit
-          rm -f ~/.git-credentials
           git config user.name "visnowden"
           git clone https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden
           echo
