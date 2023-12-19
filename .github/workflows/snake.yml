@@ -30,6 +30,8 @@ jobs:
           echo
           ls -la
           echo
+          cd visnowden
+          echo
           git branch -r
           echo
           cat .git/.gitconfig
@@ -40,7 +42,6 @@ jobs:
           echo
           mkdir visnowden/snake
           cp dist/* visnowden/snake
-          cd vinowden
           git init
           git switch -c output
           git add snake
