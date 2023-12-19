@@ -29,7 +29,6 @@ jobs:
           cd visnowden
           git config --global user.name "visnowden"
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
-          git remote set-url origin https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden.git
           echo
           ls -la
           echo
@@ -43,11 +42,14 @@ jobs:
           cp ../dist/* snake
           git switch -c output
           echo
+          cat .git/config
+          echo
           git branch -r
           echo
-          git add snake
+          echo git add snake
           echo
+          git remote set-url origin https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden.git
           git commit -m "Update snakes's SVG files to output"
-          git push -u origin output
+          git push -u origin/output
         env:
           AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
