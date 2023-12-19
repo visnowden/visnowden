@@ -49,3 +49,5 @@ jobs:
           echo
           git commit -m "Update snakes's SVG files to output"
           git push -u origin output
+        env:
+          AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
