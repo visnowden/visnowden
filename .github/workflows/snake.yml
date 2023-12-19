@@ -26,11 +26,11 @@ jobs:
           git config --global user.email "72585285+visnowden@users.noreply.github.com"
           git init
           mkdir snake
-          git checkout -b output
           cp dist/* snake
           git add snake
           git commit -m "Update snakes's SVG files to output"
+          git branch -M output
           git remote add origin https://github.com/visnowden/visnowden.git
-          git push origin output
+          git push -u origin output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
