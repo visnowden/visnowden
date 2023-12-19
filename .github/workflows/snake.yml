@@ -38,10 +38,6 @@ jobs:
           echo
           git branch -r
           echo
-          cat .git/.gitconfig
-          echo
-          cat .git/gitconfig
-          echo
           cat .git/config
           echo
           mkdir visnowden/snake
