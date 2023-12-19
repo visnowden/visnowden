@@ -46,7 +46,13 @@ jobs:
           mkdir snake
           cp ../dist/* snake
           git switch -c output
+          echo
+          git branch -r
+          echo
           git add snake
+          echo
+          git commit
+          echo
           git commit -m "Update snakes's SVG files to output"
           git config --global credential.helper cache
           git push -u origin output
