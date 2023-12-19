@@ -27,10 +27,9 @@ jobs:
           git init
           mkdir snake
           cp dist/* snake
+          git checkout -b output origin/output
           git add snake
           git commit -m "Update snakes's SVG files to output"
-          git branch -M output
-          git remote add origin https://github.com/visnowden/visnowden.git
           git push -u origin output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
