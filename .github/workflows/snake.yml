@@ -29,7 +29,6 @@ jobs:
           echo \nls -la
           ls -la
           git switch -c output
-          git pull
           git add snake/
           git commit -m "Update snakes's SVG files to output"
           git push -u origin origin/output
