@@ -27,15 +27,6 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-          echo "\nls -la"
-          ls -la
-          git add snake/
-          git commit -m "Update snakes's SVG files to output"
-          
-          # Fetch the latest changes from the remote
-          git fetch
-
-          # Push da nova branch local para a remota
-          git push origin HEAD:output
+          pull_and_push.sh
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
