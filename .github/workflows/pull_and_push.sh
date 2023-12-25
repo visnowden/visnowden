@@ -1,15 +1,5 @@
-#!/bin/bash
-
-echo "\nls -la"
-ls -la
-git add snake/
-git commit -m "Update snakes's SVG files to output"
-
-# Fetch the latest changes from the remote
-git fetch
-
-# Pull the changes from the remote
-git pull origin output
-git pull --rebase
-# Push da nova branch local para a remota
-git push origin output
+git checkout -b output
+git config --global user.name "visnowden"
+git config --global user.email "72585285+visnowden@users.noreply.github.com"
+git add .
+git push -u origin output -f
