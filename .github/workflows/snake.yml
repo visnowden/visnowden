@@ -29,6 +29,6 @@ jobs:
           git pull
           git add snake/
           git commit
-          git push origin output
+          git push origin output -f
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
