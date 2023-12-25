@@ -25,6 +25,8 @@ jobs:
           git checkout -b output
           git config user.name "visnowden"
           git config user.email "72585285+visnowden@users.noreply.github.com"
+          git fetch
+          git pull
           git add snake/
           git push origin output
         env:
