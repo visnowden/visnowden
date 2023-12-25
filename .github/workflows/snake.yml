@@ -27,13 +27,11 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-          git switch -c output
           echo "\nls -la"
           ls -la
           git add snake/
           git commit -m "Update snakes's SVG files to output"
-          git branch --set-upstream-to=origin/output output
-          git pull
-          git push -u origin output
+          git pull origin output
+          git push origin output
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
