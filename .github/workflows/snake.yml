@@ -9,10 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
-  generate:
-    runs-on: ubuntu-latest
-    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup git user
+        run: |
+          git config --global user.email "72585285+visnowden@users.noreply.github.com"
+          git config --global user.name "visnowden"
+
       - name: Generate GitHub Contribution Grid Snake SVG
         uses: Platane/snk@v3
         with:
@@ -20,8 +23,10 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
       - name: linux
         run: pwd; echo; ls -a; echo; ls -a dist;
+
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
           pwd
@@ -31,8 +36,6 @@ jobs:
           ls -la
           echo
           cd visnowden
-          git config --global user.name "visnowden"
-          git config --global user.email "72585285+visnowden@users.noreply.github.com"
           echo
           ls -la
           echo
@@ -55,6 +58,6 @@ jobs:
           echo
           git remote set-url origin https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden.git
           git commit -m "Update snakes's SVG files to output"
-          git push -u origin output
+          git push origin output
         env:
           AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
