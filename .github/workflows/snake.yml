@@ -26,6 +26,8 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
+          git switch output
+          git pull
           git add snake/
           git commit -m "Update snakes's SVG files to output"
           git push -u origin output
