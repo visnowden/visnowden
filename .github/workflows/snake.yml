@@ -26,9 +26,9 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-          echo \nls -la
-          ls -la
           git switch -c output
+          echo "\nls -la"
+          ls -la
           git add snake/
           git commit -m "Update snakes's SVG files to output"
           git push -u origin origin/output
