@@ -35,10 +35,11 @@ jobs:
           # Fetch the latest changes from the remote
           git fetch
 
-          # Merge the changes from the remote into the local branch
-          git merge origin/output
+          # Criação de uma nova branch local "output" que rastreia a branch remota "output"
+          git branch -M output
+          git switch -c output origin/output
 
-          # Push the merged changes back to the remote
-          git push origin output
+          # Push da nova branch local para a remota
+          git push -u origin output
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
