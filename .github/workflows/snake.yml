@@ -12,11 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup git user
-        run: |
-          git config --local user.email "72585285+visnowden@users.noreply.github.com"
-          git config --local user.name "visnowden"
-
       - name: Generate GitHub Contribution Grid Snake SVG
         uses: Platane/snk@v3
         with:
@@ -27,8 +22,10 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-         ls -la .
-         chmod +x .github/workflows/pull_and_push.sh
-         .github/workflows/pull_and_push.sh
+          git checkout -b output
+          git config user.name "visnowden"
+          git config user.email "72585285+visnowden@users.noreply.github.com"
+          git add snake/
+          git push -u origin output -f
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
