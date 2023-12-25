@@ -27,6 +27,7 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-          pull_and_push.sh
+         chmod +x pull_and_push.sh
+         pull_and_push.sh
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
