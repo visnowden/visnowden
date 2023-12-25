@@ -35,10 +35,7 @@ jobs:
           # Fetch the latest changes from the remote
           git fetch
 
-          # Criação de uma nova branch local "output" que rastreia a branch remota "output"
-          git branch -M output origin/output
-
           # Push da nova branch local para a remota
-          git push -u origin output:output
+          git push origin HEAD:output
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
