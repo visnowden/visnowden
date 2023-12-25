@@ -32,7 +32,7 @@ jobs:
           ls -la
           git add snake/
           git commit -m "Update snakes's SVG files to output"
-          git fetch
+          git branch --set-upstream-to=origin/output output
           git pull
           git push -u origin output
         env:
