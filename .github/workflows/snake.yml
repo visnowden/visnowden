@@ -11,42 +11,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup git user
-        run: |
-          git config --global user.email "72585285+visnowden@users.noreply.github.com"
-          git config --global user.name "visnowden"
-
       - name: Generate GitHub Contribution Grid Snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: visnowden
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: linux
-        run: pwd; echo; ls -a; echo; ls -a dist;
+            snake/github-contribution-grid-snake.svg
+            snake/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
-          echo \npwd:
-          pwd
-          echo \nls -la:
-          ls -la
-          echo \ngit branch -r:
-          git branch -r
-          echo
-          mkdir snake/
-          cp dist/* snake/
-          git switch -c output
-          git fetch
-          echo
-          cat .git/config
-          echo
-          git branch -r
-          echo
           git add snake/
-          echo
           git commit -m "Update snakes's SVG files to output"
           git push -u origin output
         env:
