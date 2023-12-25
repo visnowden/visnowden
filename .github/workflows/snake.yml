@@ -31,7 +31,7 @@ jobs:
           ls -la
           git add snake/
           git commit -m "Update snakes's SVG files to output"
-          git pull origin output
+          git pull --no-edit origin output
           git push origin output
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
