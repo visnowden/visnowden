@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Setup git user
         run: |
@@ -29,14 +29,15 @@ jobs:
 
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
+          echo \npwd:
           pwd
-          echo
+          echo \nls -la:
           ls -la
-          echo
+          echo \ngit branch -r:
           git branch -r
           echo
-          mkdir snake
-          cp dist/* snake
+          mkdir snake/
+          cp dist/* snake/
           git switch -c output
           git fetch
           echo
@@ -44,7 +45,7 @@ jobs:
           echo
           git branch -r
           echo
-          git add snake
+          git add snake/
           echo
           git commit -m "Update snakes's SVG files to output"
           git push -u origin origin/output
