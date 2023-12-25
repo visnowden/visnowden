@@ -10,6 +10,6 @@ git fetch
 
 # Pull the changes from the remote
 git pull origin output
-
+git pull --rebase
 # Push da nova branch local para a remota
-git push origin HEAD:output
+git push origin output
