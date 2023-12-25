@@ -36,7 +36,7 @@ jobs:
           git branch -r
           echo
           mkdir snake
-          cp ../dist/* snake
+          cp dist/* snake
           git switch -c output
           git fetch
           echo
