@@ -36,8 +36,7 @@ jobs:
           git fetch
 
           # Criação de uma nova branch local "output" que rastreia a branch remota "output"
-          git branch -M output
-          git switch -c output origin/output
+          git branch -M output origin/output
 
           # Push da nova branch local para a remota
           git push -u origin output
