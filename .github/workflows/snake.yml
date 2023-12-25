@@ -39,6 +39,6 @@ jobs:
           git branch -M output origin/output
 
           # Push da nova branch local para a remota
-          git push -u origin output
+          git push -u origin output:output
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
