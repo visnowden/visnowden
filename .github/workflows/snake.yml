@@ -1,33 +1,34 @@
 name: Generate SVGs
 
 on:
- schedule:
-    - cron: "2 0 * * *"
- workflow_dispatch:
+  schedule:
+    - cron: "59 23 * * *" 
+  workflow_dispatch:
 
 jobs:
- build:
+  generate:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
+    
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate GitHub Contribution Grid Snake SVG
-        uses: Platane/snk@v3
+      # generates a snake game from a github user (visnowden) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: visnowden
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            snake/github-contribution-grid-snake.svg
-            snake/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Move SVG files to custom directory and Commit and push changes
-        run: |
-          git switch -c output
-          git config user.name "visnowden"
-          git config user.email "72585285+visnowden@users.noreply.github.com"
-          git add snake/
-          git fetch
-          git commit -m "commit"
-          git push origin output
+            snk/snake/github-contribution-grid-snake.svg
+            snk/snake/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+          
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: snk
         env:
-          AUTH_TOKEN: ${{ secrets.snake }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
