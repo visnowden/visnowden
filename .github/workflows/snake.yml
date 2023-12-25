@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup git user
+        run: |
+          git config --local user.email "72585285+visnowden@users.noreply.github.com"
+          git config --local user.name "visnowden"
+
       - name: Generate GitHub Contribution Grid Snake SVG
         uses: Platane/snk@v3
         with:
