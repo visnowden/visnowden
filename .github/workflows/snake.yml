@@ -31,7 +31,14 @@ jobs:
           ls -la
           git add snake/
           git commit -m "Update snakes's SVG files to output"
-          git pull --no-edit origin output
+          
+          # Fetch the latest changes from the remote
+          git fetch
+
+          # Merge the changes from the remote into the local branch
+          git merge origin/output
+
+          # Push the merged changes back to the remote
           git push origin output
         env:
           AUTH_TOKEN: ${{ secrets.snake }}
