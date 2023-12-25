@@ -30,20 +30,10 @@ jobs:
       - name: Move SVG files to custom directory and Commit and push changes
         run: |
           pwd
-          git clone https://github.com/visnowden/visnowden
-          pwd
           echo
           ls -la
-          echo
-          cd visnowden
-          echo
-          ls -la
-          echo
-          ls -la .git
           echo
           git branch -r
-          echo
-          cat .git/config
           echo
           mkdir snake
           cp ../dist/* snake
@@ -56,7 +46,6 @@ jobs:
           echo
           git add snake
           echo
-          git remote set-url origin https://visnowden:${{ secrets.snake }}@github.com/visnowden/visnowden.git
           git commit -m "Update snakes's SVG files to output"
           git push origin output
         env:
