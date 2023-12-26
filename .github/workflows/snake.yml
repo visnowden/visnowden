@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: output
+          ref: raw
 
       # generates a snake game from a github user (visnowden) contributions graph, output a svg animation at <svg_out_path>
       - name: generate gh_snk.svg
