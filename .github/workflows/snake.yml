@@ -24,7 +24,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             snk/gh_snk.svg
-            snk/gh_snk-dark.svg?palette=github-dark
+            snk/gh_snk_dark.svg?palette=github-dark
           
       - name: linux
         run: |
