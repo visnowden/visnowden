@@ -35,10 +35,7 @@
 </div>
 
 
-<picture>
-<source media="(prefers-color-scheme:dark)" srcset="https://raw.githubusercontent.com/Hacker-Bug-Hunter/Hacker-Bug-Hunter/output/github-contribution-grid-snake-dark.svg">
-<source media="(prefers-color-scheme:light)" srcset="https://raw.githubusercontent.com/Hacker-Bug-Hunter/Hacker-Bug-Hunter/output/github-contribution-grid-snake.svg">
-<img alt="github contribution grid snake animation" width="100%" src="">
-</picture>
-</visnowden>
+
+![](https://raw.githubusercontent.com/visnowden/visnowden/raw/snk/gh_snk_dark.svg)
+![](https://raw.githubusercontent.com/visnowden/visnowden/snk/raw/gh_snk.svg)
 
