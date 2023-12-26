@@ -41,5 +41,3 @@ jobs:
           commit_message: snake update
           target_branch: raw
           build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.snake }}
