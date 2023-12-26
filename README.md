@@ -36,6 +36,6 @@
 
 
 
-![](https://raw.githubusercontent.com/visnowden/visnowden/raw/snk/gh_snk_dark.svg)
-![](https://raw.githubusercontent.com/visnowden/visnowden/raw/snk/gh_snk.svg)
+![Image](https://raw.githubusercontent.com/visnowden/visnowden/raw/snk/gh_snk_dark.svg)
+![Image](https://raw.githubusercontent.com/visnowden/visnowden/raw/snk/gh_snk.svg)
 
