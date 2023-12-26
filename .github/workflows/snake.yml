@@ -31,9 +31,6 @@ jobs:
           echo ls -la
           ls -la
           echo
-          echo git switch
-          git switch output
-          echo
           echo ls -la
           ls -la
           echo
