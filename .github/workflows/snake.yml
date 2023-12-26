@@ -1,4 +1,4 @@
-tname: Generate SVGs
+name: Generate SVGs
 
 on:
   schedule:
