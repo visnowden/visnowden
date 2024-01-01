@@ -3,7 +3,7 @@
 ![](https://github-readme-stats.vercel.app/api?username=visnowden&show=prs_merged&rank_icon=github&border_radius=20&hide_title=true&show_icons=true&theme=holi)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=visnowden&bg_color=45,07112e,000&border_color=80ff00&text_color=fff&border_radius=20&hide_title=true&langs_count=20&layout=compact)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=visnowden&bg_color=50,0ef,fff,fff&hide_border=true&text_color=000&border_radius=20&hide_title=true&langs_count=20&layout=compact)
-![]()
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=visnowden&border_radius=20&hide_title=true&theme=holi&langs_count=20&layout=compact)
 ![]()
 ![]()
 ![]()
