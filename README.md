@@ -6,7 +6,6 @@
 [](https://github-readme-stats.vercel.app/api/top-langs/?username=visnowden&border_radius=20&hide_title=true&theme=holi&langs_count=20&layout=compact)
 [](https://streak-stats.demolab.com?user=visnowden&border_radius=20&date_format=j%20M%5B%20Y%5D&card_width=195&border=80ff00&background=45%2C07112e%2C000&ring=005570&fire=1ff&currStreakNum=fff&currStreakLabel=fff&dates=1ff&hide_total_contributions=true&hide_longest_streak=true)
 [](https://streak-stats.demolab.com?user=visnowden&border_radius=20&date_format=j%20M%5B%20Y%5D&card_width=195&background=45%2C0ef%2Cfff&ring=0ac&fire=057&hide_border=true&currStreakNum=000&currStreakLabel=000&dates=000&hide_total_contributions=true&hide_longest_streak=true)
-[](https://streak-stats.demolab.com?user=visnowden&theme=holi-theme&border_radius=20&date_format=j%20M%5B%20Y%5D&card_width=195&hide_total_contributions=true&hide_longest_streak=true)
 []()
 []()
 []()
