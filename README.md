@@ -1,4 +1,4 @@
-# echo '# Another day developing... ' >> calendar.pyc
+# echo '# Another day developing... ' >> calendar.pyo
 ### <b><i>visnowden</i> is my ✨_special_✨ repository based on GitHub's README.md</b>
 
 - 🌱 Honing my Python skills and learning Django
