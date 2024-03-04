@@ -21,6 +21,11 @@ jobs:
 
     - name: Install dependencies
       run: |
+        echo ===================
+        ls -la
+        echo ===================
+        cwd
+        echo ===================
         python -m pip install --upgrade pip
         pip install -r .github/workflows/streak/requirements.txt
 
