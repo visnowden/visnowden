@@ -17,11 +17,12 @@ jobs:
       with:
         fetch-depth: 0
         ref: raw
+        clean: false
 
-    - name: Move the files
-      run: |
-        mkdir temp/
-        mv ./.github/workflows/compare_update.py ./temp/
+    # - name: Move the files
+    #   run: |
+    #     mkdir temp/
+    #     mv ./.github/workflows/compare_update.py ./temp/
 
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -29,11 +30,11 @@ jobs:
         fetch-depth: 0
         ref: main
 
-    - name: Move the files
-      run: |
-        ls -la
-        ls -la ./temp/
-        mv ./temp/* ./s
+    # - name: Move the files
+    #   run: |
+    #     ls -la
+    #     ls -la ./temp/
+    #     mv ./temp/* ./s
 
     - name: Set up Python
       uses: actions/setup-python@v5
