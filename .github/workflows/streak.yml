@@ -17,12 +17,10 @@ jobs:
       with:
         fetch-depth: 0
         ref: raw
-        clean: false
 
-    # - name: Move the files
-    #   run: |
-    #     mkdir raw_branch_files/
-    #     mv ./.github/workflows/compare_update.py ./raw_branch_files/
+    - name: Move the files
+      run: |
+        mv ./.github/workflows/compare_update.py ..
 
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -34,9 +32,7 @@ jobs:
       run: |
         ls -la
         ls -la ..
-        pwd ..
-    # ls -la ./raw_branch_files/
-    #     mv ./raw_branch_files/* ./s
+        mv ../compare_update.py ./
 
     - name: Set up Python
       uses: actions/setup-python@v5
