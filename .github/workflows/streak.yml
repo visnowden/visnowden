@@ -30,7 +30,10 @@ jobs:
         ref: main
 
     - name: Move the files
-      run: mv ./temp/* ./s
+      run: |
+        ls -la
+        ls -la ./temp/
+        mv ./temp/* ./s
 
     - name: Set up Python
       uses: actions/setup-python@v5
