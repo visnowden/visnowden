@@ -17,13 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Change to branch raw
-      run: git checkout raw
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0
-        ref: raw
+        fetch-depth: 0   # Faz o download completo do repositório
+        ref: raw         # Garante o checkout da branch "raw"
 
     - name: Set up Python
       uses: actions/setup-python@v2
