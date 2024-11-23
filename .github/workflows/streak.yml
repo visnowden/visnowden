@@ -12,11 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Ghange to branch raw
+    - name: Change to branch raw
       run: git checkout raw
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
+        fetch-depth: 0
         ref: raw
 
     - name: Set up Python
