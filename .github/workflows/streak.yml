@@ -17,11 +17,20 @@ jobs:
       with:
         fetch-depth: 0
         ref: raw
+
+    - name: Move the files
+      run: |
+        mkdir temp
+        mv .github/workflows/compare_update.py temp
+
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
         ref: main
+
+    - name: Move the files
+      run: mv temp/compare_update.py .
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -34,8 +43,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: listing the files
-      run: ls -la
-      
     - name: Run Python script
       run: python .github/workflows/streak/compare_update.py
