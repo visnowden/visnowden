@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Ghange to branch raw
+      run: git checkout raw
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
@@ -26,7 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r raw/.github/workflows/streak/requirements.txt
+        pip install -r .github/workflows/streak/requirements.txt
 
     - name: Run Python script
-      run: python raw/.github/workflows/streak/compare_update.py
+      run: python .github/workflows/streak/compare_update.py
