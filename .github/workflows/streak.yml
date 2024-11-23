@@ -17,8 +17,6 @@ jobs:
       with:
         fetch-depth: 0
         ref: raw
-    - name: listing the files
-      run: ls -la
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
@@ -36,5 +34,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
+    - name: listing the files
+      run: ls -la
+      
     - name: Run Python script
       run: python .github/workflows/streak/compare_update.py
