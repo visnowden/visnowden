@@ -33,6 +33,8 @@ jobs:
     - name: Move the files
       run: |
         ls -la
+        ls -la ..
+        pwd ..
     # ls -la ./raw_branch_files/
     #     mv ./raw_branch_files/* ./s
 
