@@ -30,10 +30,10 @@ jobs:
         fetch-depth: 0
         ref: main
 
-    # - name: Move the files
-    #   run: |
-    #     ls -la
-    #     ls -la ./temp/
+    - name: Move the files
+      run: |
+        ls -la
+        ls -la ./temp/
     #     mv ./temp/* ./s
 
     - name: Set up Python
