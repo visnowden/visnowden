@@ -7,7 +7,7 @@ on:
     inputs:
       branch:
         description: "Select the branch to run the workflow"
-        default: "main"
+        default: "raw"
         required: true
 
 jobs:
