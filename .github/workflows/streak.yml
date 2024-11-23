@@ -1,16 +1,9 @@
 name: compare and update
 
 on:
-  push:
-    branches: ["raw"]
   schedule:
     - cron: "3 0 * * *"
   workflow_dispatch:
-    inputs:
-      branch:
-        description: "Select the branch to run the workflow"
-        default: "raw"
-        required: true
 
 jobs:
   compare_and_update:
@@ -19,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: raw
 
     - name: Set up Python
       uses: actions/setup-python@v2
