@@ -15,6 +15,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
+        ref: raw
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
         ref: main
 
     - name: Set up Python
