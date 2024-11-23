@@ -20,8 +20,8 @@ jobs:
 
     - name: Move the files
       run: |
-        mkdir temp
-        mv .github/workflows/compare_update.py temp
+        mkdir temp/
+        mv ./.github/workflows/compare_update.py ./temp/
 
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
         ref: main
 
     - name: Move the files
-      run: mv temp/compare_update.py .
+      run: mv ./temp/* ./s
 
     - name: Set up Python
       uses: actions/setup-python@v5
