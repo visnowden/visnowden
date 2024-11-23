@@ -46,4 +46,4 @@ jobs:
         pip install requests
 
     - name: Run Python script
-      run: python .github/workflows/streak/compare_update.py
+      run: python compare_update.py
