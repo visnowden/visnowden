@@ -1,0 +1,33 @@
+name: Generate SVGs
+on:
+  schedule:
+    - cron: "58 23 * * *"
+  workflow_dispatch:
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: raw
+      - name: generate svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            snk/gh_snk_dark.svg?palette=github-dark
+            snk/gh_snk.svg
+      - name: linux
+        run: |
+          ls -la
+      - name: push svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          commit_message: snake update
+          committer: visnowden
+          target_branch: raw
+          build_dir: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
