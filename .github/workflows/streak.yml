@@ -1,6 +1,8 @@
 name: compare and update
 
 on:
+  push:
+    branches: ["raw"]
   repository_dispatch:
     types: [push-event]
   schedule:
