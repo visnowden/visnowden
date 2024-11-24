@@ -1,8 +1,8 @@
 name: compare and update
 
 on:
-  push:
-    branches: ["raw"]
+  repository_dispatch:
+    types: [push-event]
   schedule:
     - cron: "3 0 * * *"
   workflow_dispatch:
@@ -19,8 +19,7 @@ jobs:
         ref: raw
 
     - name: Move the files
-      run: |
-        mv ./.github/workflows/compare_update.py ..
+      run: mv .github/workflows/compare_update.py ..
 
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -29,10 +28,7 @@ jobs:
         ref: main
 
     - name: Move the files
-      run: |
-        ls -la
-        ls -la ..
-        mv ../compare_update.py ./
+      run: mv ../compare_update.py .
 
     - name: Set up Python
       uses: actions/setup-python@v5
