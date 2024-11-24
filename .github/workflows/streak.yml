@@ -51,6 +51,6 @@ jobs:
 
     - name: Commiting
       run: |
-        git add README.md, test.txt
+        git add test.txt
         git commit -m "Changes by script"
         git push origin main
