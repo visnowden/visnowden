@@ -43,3 +43,12 @@ jobs:
 
     - name: Run Python script
       run: python compare_update.py
+
+    - name: test
+      run: echo "Hello World!" >> test.txt
+
+    - name: Commiting
+      run: |
+        git add README.md, test.txt
+        git commit -m "Changes by script"
+        git push origin main
