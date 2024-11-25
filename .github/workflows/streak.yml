@@ -6,7 +6,7 @@ on:
   repository_dispatch:
     types: [push-event]
   schedule:
-    - cron: "3 0 * * *"
+    - cron: "5 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -45,9 +45,6 @@ jobs:
 
     - name: Run Python script
       run: python compare_update.py
-
-    - name: test
-      run: echo "Hello World!" >> test.txt
 
     - name: Commiting
       run: |
