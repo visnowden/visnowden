@@ -44,12 +44,14 @@ jobs:
         pip install requests
 
     - name: Run Python script
-      run: python compare_update.py
+      run: |
+        python compare_update.py
+        rm compare_update.py
 
     - name: Commiting
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add README.md
+        git add .
         git commit -m "Changes by script"
         git push origin main
