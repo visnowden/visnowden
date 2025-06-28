@@ -1,4 +1,4 @@
-name: Generate SVGs
+name: Generate snakes
 on:
   schedule:
     - cron: "50 23 * * *"
